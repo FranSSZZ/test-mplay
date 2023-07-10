@@ -82,6 +82,15 @@
     </a-scene>
 
     <script type="module">
+        var client = deepstream('<YOUR APP URL>')
+            client.login({}, function (success,data) {
+	        if(success){
+		    startApp(data)
+	        }else{
+	    //handle login failed
+	        }
+            })
+            
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
