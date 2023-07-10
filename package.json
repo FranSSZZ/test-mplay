@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "aframe-firebase-component": "^4.0.3"
+  }
+}
