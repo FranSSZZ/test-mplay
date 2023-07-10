@@ -1,13 +1,3 @@
-// var client = deepstream('<test-mplay.firebaseapp.com>')
-// client.login({}, function (success,data) {
-// 	if(success){
-// 		startApp(data)
-// 	}else{
-// 	    //handle login failed
-// 	}
-// })
-
-//startup by creating a new record for each user
 function startApp(data){
     var x = Math.random() * (10 - (-10)) + (-10);
     var y = 0; 
