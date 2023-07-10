@@ -1,3 +1,6 @@
+require('aframe');
+require('aframe-firebase-component');
+
 function startApp(data){
     var x = Math.random() * (10 - (-10)) + (-10);
     var y = 0; 
