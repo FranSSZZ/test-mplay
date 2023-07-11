@@ -1,6 +1,15 @@
 require('aframe');
 require('aframe-firebase-component');
 
+var client = deepstream('<test-mplay.firebaseapp.com>')
+client.login({}, function (success,data) {
+	if(success){
+		startApp(data)
+	}else{
+	    //handle login failed
+	}
+})
+
 function startApp(data){
     var x = Math.random() * (10 - (-10)) + (-10);
     var y = 0; 
